@@ -1,5 +1,5 @@
-@import '../node_modules/@photo-sphere-viewer/core/index.css';
-@import '../node_modules/@photo-sphere-viewer/markers-plugin/index.css';
+@import 'photo-sphere-viewer/core/index.css';
+@import 'photo-sphere-viewer/markers-plugin/index.css';
 
 html, body, #viewer {
   width: 100%;
