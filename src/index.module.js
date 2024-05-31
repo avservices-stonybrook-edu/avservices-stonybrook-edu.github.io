@@ -1,6 +1,6 @@
 import './styles.css';
-import { Viewer } from '@photo-sphere-viewer/core';
-import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+import { Viewer } from '/photo-sphere-viewer/core';
+import { MarkersPlugin } from '/photo-sphere-viewer/markers-plugin';
 
 const baseUrl = 'https://photo-sphere-viewer-data.netlify.app/assets/';
 
