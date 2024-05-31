@@ -1,4 +1,6 @@
 
+
+
 <head>
     <!-- for optimal display on high DPI devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +9,14 @@
 </head>
 
 <!-- the viewer container must have a defined size -->
-<div id="viewer" style="width: 100vw; height: 100vh;"></div>
+<div id="viewer" style="width: 99vw; height: 98vh;"></div>
 
 <script type="importmap">
     {
         "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
             "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js"
+			"@photo-sphere-viewer/markers-plugin": "/src/index.module.js"
         }
     }
 </script>
@@ -24,6 +27,6 @@
     const viewer = new Viewer({
         container: document.querySelector('#viewer'),
         panorama: 'Frey313-Front.jpg',
-	sphereCorrection: { pan:0, tilt:0, roll: -0.045 }
-    });
+	sphereCorrection: { pan:0, tilt:0, roll: -0.025 }
+	});
 </script>
