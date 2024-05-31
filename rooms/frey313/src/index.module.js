@@ -6,7 +6,7 @@ const baseUrl = 'https://photo-sphere-viewer-data.netlify.app/assets/';
 
 const viewer = new Viewer({
     container: 'viewer',
-    panorama: baseUrl + 'sphere.jpg',
+    panorama: baseUrl + 'Frey313-Front.jpg',
     caption: 'Parc national du Mercantour <b>&copy; Damien Sorel</b>',
 
     plugins: [
