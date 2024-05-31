@@ -1,23 +1,29 @@
-<div id="viewer"></div>
 
-<script type="text/template" id="tooltip-content">
-    <img src="Frey313-Front.jpg">
-    <article>
-      <h2>Lorem ipsum</h2>
-      <p>
-        Vivamus magna. Cras in mi at felis aliquet
-        congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis,
-        tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
-      </p>
-    </article>
-</script>
+<head>
+    <!-- for optimal display on high DPI devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+</head>
+
+<!-- the viewer container must have a defined size -->
+<div id="viewer" style="width: 99vw; height: 98vh;"></div>
 
 <script type="importmap">
     {
         "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
-            "@photo-sphere-viewer/core": "/photo-sphere-viewer/core/index.module.js",
-            "@photo-sphere-viewer/markers-plugin": "/src/index.module.js"
+            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.module.js",
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin@5/index.module.js"
         }
     }
+</script>
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+
+    const viewer = new Viewer({
+        container: document.querySelector('#viewer'),
+        panorama: 'Frey313-Front.jpg',
+	sphereCorrection: { pan:0, tilt:0, roll: -0.02 }
+    });
 </script>
