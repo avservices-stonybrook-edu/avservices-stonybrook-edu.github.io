@@ -173,6 +173,25 @@ html, body, #viewer {
       "trigger": "click"
     }
 },
+{
+    "id": "projector",
+    "image": 'shield.png',
+    "position": {
+      "yaw": 6.161,
+      "pitch": 0.276
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-projector').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},
   
             ],
         }],
@@ -263,7 +282,7 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
 
 <script type="text/template" id="tooltip-echo">
         <article>
-		<img src='intercom.jpg'> 
+		<img src='echo.jpg'> 
       <h2>Lecture Capture Camera</h2>
       <p>The Lecture Capture Camera can be used to capture your lectures to the Lecture Capture System. The camera also allows for video to be sent to Zoom or other communication/colaboration applications on the lectern computer.
 	  
@@ -271,4 +290,14 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
 	  
 	  For more info on best practices, or how to schedule a lectrue capture, visit <a href="https://it.stonybrook.edu/services/echo360-lecture-capture">https://it.stonybrook.edu/services/echo360-lecture-capture</a></p>
     </article>
+</script>	
+
+<script type="text/template" id="tooltip-projector">
+        <article>
+		<img src='projector.jpg'> 
+      <h2>Projector</h2>
+      <p>
+        This projector allows for presentation of the lectern computer, personal device, or wireless screen sharing.<br> For more information on how to operate the projector, please see our Far Beyond Style Knowlage Base Article: <a href="https://it.stonybrook.edu/help/kb/far-beyond-style">https://it.stonybrook.edu/help/kb/far-beyond-style</a>
+      </p>
+	  </article>
 </script>	
