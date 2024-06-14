@@ -172,8 +172,17 @@ html, body, #viewer {
 		],
     });
 	
-	markersPlugin.gotoMarker('marker-lectern', '4rpm')
-  .then(() => /* animation complete */);
+	viewer.addEventListener('ready', () => {
+    viewer
+        .animate({
+            yaw: 1.39,
+            pitch: 0.2,
+            speed: 2500,
+        })
+        .then(() => {
+            MarkersPlugin.showMarker('marker-lectern');
+        });
+}, { once: true });
 	</script>
 
 <script type="text/template" id="description">
