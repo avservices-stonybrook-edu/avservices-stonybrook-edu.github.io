@@ -171,6 +171,18 @@ html, body, #viewer {
 		'description',
 		],
     });
+	
+	viewer.addEventListener('ready', () => {
+    viewer
+        .animate({
+            yaw: 1.39,
+            pitch: 0.25,
+            speed: 1000,
+        })
+        .then(() => {
+            markersPlugin.showMarkerTooltip('custom-tooltip');
+        });
+}, { once: true });
 	</script>
 
 <script type="text/template" id="description">
