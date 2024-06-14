@@ -101,7 +101,7 @@ html, body, #viewer {
     "id": "marker-lights",
     "image": 'shield.png',
     "position": {
-      "yaw": 1.812,
+      "yaw": 1.819,
       "pitch": -0.105
     },
     "size": {
@@ -135,6 +135,25 @@ html, body, #viewer {
       "trigger": "hover"
     }
 },
+{
+    "id": "intercom",
+    "image": 'shield.png',
+    "position": {
+      "yaw": 1.787,
+      "pitch": -0.114
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-intercom').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "hover"
+    }
+},
   
             ],
         }],
@@ -143,7 +162,7 @@ html, body, #viewer {
         panorama: 'Frey313-Front.jpg',
 		caption: '<b> Frey Single Projector Large Classroom:</b> Frey 313 ',
 		description: document.querySelector('#description').innerHTML,
-			sphereCorrection: { pan:0.65, tilt:0, roll: -0.025 },
+			sphereCorrection: { pan:0, tilt:0, roll: -0.025 },
 		navbar: [
 		'zoom', 
 		'move', 
@@ -200,5 +219,13 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
       <p>The Supply Box holds additional consumable supplies such as Markers and Erasers.
 	  <br>
 	  On top of the Supply Box is white board cleaning spray, and tri-fold towels for a deeper clean.</p>
+    </article>
+</script>	
+
+<script type="text/template" id="tooltip-intercom">
+        <article>
+		<img src='intercom.jpg'> 
+      <h2>Intercom</h2>
+      <p>The Intercom will call the Classroom Support office in Frey Hall, who can assist you if needed.</p>
     </article>
 </script>	
