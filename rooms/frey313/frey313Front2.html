@@ -4,23 +4,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
 	<style>
-	tooltip-content {
+html, body, #viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+	.custom-tooltip {
     max-width: none;
     width: 300px;
     box-shadow: 0 0 0 3px white;
 }
 
-tooltip-content .psv-tooltip-content {
+.custom-tooltip .psv-tooltip-content {
     padding: 0;
 }
 
-tooltip-content img {
+.custom-tooltip img {
     width: 100%;
     border-radius: 4px 4px 0 0;
 }
 
-tooltip-content h2,
-tooltip-content p {
+.custom-tooltip h2,
+.custom-tooltip p {
     margin: 1rem;
     text-align: justify;
 }
@@ -63,6 +69,7 @@ tooltip-content p {
     "anchor": "bottom center",
     "tooltip": {
       "content": document.querySelector('#tooltip-content').innerText,
+	  "className": 'custom-tooltip',
       "position": "top center",
       "trigger": "hover"
     }
