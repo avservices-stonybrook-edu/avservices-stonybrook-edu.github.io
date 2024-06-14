@@ -54,28 +54,14 @@
 		description: document.querySelector('#description').innerHTML,
 			sphereCorrection: { pan:0, tilt:0, roll: -0.02 }
     });
-	const markersPlugin = viewer.getPlugin(MarkersPlugin);
-
-viewer.addEventListener('ready', () => {
-    viewer
-        .animate({
-            yaw: 0,
-            pitch: 0.5,
-            speed: 1000,
-        })
-        .then(() => {
-            markersPlugin.showMarkerTooltip('custom-tooltip');
-        });
-}, { once: true });
-</script>
+	</script>
 
 <script type="text/template" id="description">
     <p>Frey Large classrooms are equiped with one to two projectors and seat aproximately 52 people. <br> For more information on what equipment is in each room in Frey Hall, please refer to our Guide on Equipment Installed in Classrooms: <a href="https://stonybrook365-my.sharepoint.com/:x:/g/personal/jarrod_mcfarlane_stonybrook_edu/EchVh7xGX15LjfwCvgN2hD4Ba0aHUglplvKi62KVLelalA?e=4%3AdjeDP6&fromShare=true&at=9">https://stonybrook365-my.sharepoint.com/:x:/g/personal/jarrod_mcfarlane_stonybrook_edu/EchVh7xGX15LjfwCvgN2hD4Ba0aHUglplvKi62KVLelalA?e=4%3AdjeDP6&fromShare=true&at=9</a>  .</p>
 </script>
 
 <script type="text/template" id="tooltip-content">
-    <img src="https://photo-sphere-viewer-data.netlify.app/assets/sphere-small.jpg">
-    <article>
+        <article>
       <h2>Lorem ipsum</h2>
       <p>
         Vivamus magna. Cras in mi at felis aliquet
