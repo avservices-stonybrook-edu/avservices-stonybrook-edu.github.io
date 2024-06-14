@@ -5,26 +5,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
 	<style>
 a:link {
-  color: blue;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: blue;
-  background-color: white;
+  color: gray;
+  background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
   color: red;
-  background-color: white;
+  background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
   color: yellow;
-  background-color: white;
+  background-color: transparent;
   text-decoration: underline;
 }
 html, body, #viewer {
@@ -116,6 +116,25 @@ html, body, #viewer {
       "trigger": "hover"
     }
   },
+  {
+    "id": "marker-supplies",
+    "image": 'shield.png',
+    "position": {
+      "yaw": 4.38,
+      "pitch": -0.037
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-supplies').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "hover"
+    }
+},
   
             ],
         }],
@@ -166,5 +185,15 @@ html, body, #viewer {
 </ul>
 		</a>
       </p>
+    </article>
+</script>	
+
+<script type="text/template" id="tooltip-supplies">
+        <article>
+		<img src='supplies.jpg'> 
+      <h2>Supply Box</h2>
+      <p>The Supply Box holds additional consumable supplies such as Markers and Erasers.
+	  <br>
+	  On top of the Supply Box is white board cleaning spray, and tri-fold towels for a deeper clean.</p>
     </article>
 </script>	
