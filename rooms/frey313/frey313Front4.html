@@ -171,7 +171,7 @@ html, body, #viewer {
 		'description',
 		],
     });
-	
+	const markersPlugin = viewer.getPlugin(MarkersPlugin);
 	viewer.addEventListener('ready', () => {
     viewer
         .animate({
@@ -180,7 +180,7 @@ html, body, #viewer {
             speed: 2500,
         })
         .then(() => {
-            MarkersPlugin.showMarker('marker-lectern');
+            markersPlugin.showMarker('marker-lectern');
         });
 }, { once: true });
 	</script>
