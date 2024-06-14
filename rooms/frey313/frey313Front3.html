@@ -102,7 +102,12 @@ html, body, #viewer {
 		caption: '<b> Frey Large Classroom:</b> Frey 313 ',
 		description: document.querySelector('#description').innerHTML,
 			sphereCorrection: { pan:0, tilt:0, roll: -0.025 },
-		navbar: 'zoom', 'move', 'markers', 'caption description'
+		navbar: [
+		'zoom', 
+		'move', 
+		'markers', 
+		'caption description'
+		],
     });
 	</script>
 
