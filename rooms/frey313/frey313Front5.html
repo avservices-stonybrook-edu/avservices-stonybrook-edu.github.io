@@ -179,13 +179,13 @@ html, body, #viewer {
             pitch: 0.05,
             speed: 2500,
         })
-        .then() => {
+        .then(() => {
             markersPlugin.showMarkerTooltip('marker-lectern');
 			}
 		.then() => {
 			Delay: 5000
 			}
-		.then(() => {
+		.then() => {
 			markersPlugin.hideMarkerTooltip('marker-lectern');
         });
 }, { once: true });
