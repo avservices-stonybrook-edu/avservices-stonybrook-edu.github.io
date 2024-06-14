@@ -1,0 +1,86 @@
+<head>
+    <!-- for optimal display on high DPI devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+</head>
+
+<!-- the viewer container must have a defined size -->
+<div id="viewer" style="width: 99vw; height: 98vh;"></div>
+
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"
+        }
+    }
+</script>
+
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+    import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+    const viewer = new Viewer({
+
+        plugins: [
+        [MarkersPlugin, {
+		"defaultHoverScale": true,
+            markers: [
+                {
+    "id": "marker-bkpjvnquwp8",
+    "image": "https://photo-sphere-viewer-data.netlify.app/assets/pictos/pin-red.png",
+    "position": {
+      "yaw": 1.397,
+      "pitch": -0.124
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-content').innerText,
+      "position": "top center",
+      "trigger": "hover"
+    }
+  }
+            ],
+        }],
+    ],
+        container: document.querySelector('#viewer'),
+        panorama: 'Frey313-Front.jpg',
+		caption: '<b> Frey Large Classroom:</b> Frey 313 ',
+		description: document.querySelector('#description').innerHTML,
+			sphereCorrection: { pan:0, tilt:0, roll: -0.02 }
+    });
+	const markersPlugin = viewer.getPlugin(MarkersPlugin);
+
+viewer.addEventListener('ready', () => {
+    viewer
+        .animate({
+            yaw: 0,
+            pitch: 0.5,
+            speed: 1000,
+        })
+        .then(() => {
+            markersPlugin.showMarkerTooltip('custom-tooltip');
+        });
+}, { once: true });
+</script>
+
+<script type="text/template" id="description">
+    <p>Frey Large classrooms are equiped with one to two projectors and seat aproximately 52 people. <br> For more information on what equipment is in each room in Frey Hall, please refer to our Guide on Equipment Installed in Classrooms: <a href="https://stonybrook365-my.sharepoint.com/:x:/g/personal/jarrod_mcfarlane_stonybrook_edu/EchVh7xGX15LjfwCvgN2hD4Ba0aHUglplvKi62KVLelalA?e=4%3AdjeDP6&fromShare=true&at=9">https://stonybrook365-my.sharepoint.com/:x:/g/personal/jarrod_mcfarlane_stonybrook_edu/EchVh7xGX15LjfwCvgN2hD4Ba0aHUglplvKi62KVLelalA?e=4%3AdjeDP6&fromShare=true&at=9</a>  .</p>
+</script>
+
+<script type="text/template" id="tooltip-content">
+    <img src="https://photo-sphere-viewer-data.netlify.app/assets/sphere-small.jpg">
+    <article>
+      <h2>Lorem ipsum</h2>
+      <p>
+        Vivamus magna. Cras in mi at felis aliquet
+        congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis,
+        tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+      </p>
+    </article>
+</script>	
