@@ -56,11 +56,31 @@ html, body, #viewer {
 		"defaultHoverScale": true,
             markers: [
                 {
-    "id": "marker-bkpjvnquwp8",
+    "id": "marker-lectern",
     "image": "https://photo-sphere-viewer-data.netlify.app/assets/pictos/pin-red.png",
     "position": {
       "yaw": 1.397,
       "pitch": -0.124
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-content').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "hover"
+    }
+  }
+  
+  {
+    "id": "marker-lights",
+    "image": "https://photo-sphere-viewer-data.netlify.app/assets/pictos/pin-red.png",
+    "position": {
+      "yaw": 1.812,
+      "pitch": -0.105
     },
     "size": {
       "width": 32,
@@ -81,7 +101,7 @@ html, body, #viewer {
         panorama: 'Frey313-Front.jpg',
 		caption: '<b> Frey Large Classroom:</b> Frey 313 ',
 		description: document.querySelector('#description').innerHTML,
-			sphereCorrection: { pan:0, tilt:0, roll: -0.02 }
+			sphereCorrection: { pan:0, tilt:0, roll: -1 }
     });
 	</script>
 
