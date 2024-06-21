@@ -313,8 +313,8 @@ html, body, #viewer {
     "id": "mkb",
     "image": 'shield.png',
     "position": {
-	  "yaw": 5.707,
-      "pitch": -0.752
+	  "yaw": 5.747,
+      "pitch": -0.779
     },
     "size": {
       "width": 32,
@@ -323,6 +323,25 @@ html, body, #viewer {
     "anchor": "bottom center",
     "tooltip": {
       "content": document.querySelector('#tooltip-mkb').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "seats",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 4.988,
+      "pitch": -0.011
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-seats').innerText,
 	  "className": 'custom-tooltip',
       "position": "top center",
       "trigger": "click"
@@ -563,6 +582,20 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
 		<br>
 		<br>
 		Additional Computer interface devices, such as Slide Advancers are available on our <a href="https://stonybrook.webcheckout.net/sso/patron#!/center/1?catalogRtype=493835">Patron Portal</a>.
+</a>
+      </p>
+	  </article>
+</script>	
+
+<script type="text/template" id="tooltip-seats">
+        <article>
+		<img src='Seating.jpg'> 
+      <h2>Handicap Seating</h2>
+      <p>
+        There are 4 wheelchair accessable seating postions, each with a rolling chair for added flexability.
+		<br>
+		<br>
+		Each outer edge of the first two rows has this seating arrangment in for a total of four accessable seats.
 </a>
       </p>
 	  </article>
