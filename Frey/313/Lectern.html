@@ -333,7 +333,7 @@ html, body, #viewer {
     "image": 'shield.png',
     "position": {
 	  "yaw": 4.988,
-      "pitch": -0.011
+      "pitch": -0.031
     },
     "size": {
       "width": 32,
@@ -342,6 +342,25 @@ html, body, #viewer {
     "anchor": "bottom center",
     "tooltip": {
       "content": document.querySelector('#tooltip-seats').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "usb",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 5.746,
+      "pitch": -0.238
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-usb').innerText,
 	  "className": 'custom-tooltip',
       "position": "top center",
       "trigger": "click"
@@ -582,7 +601,7 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
 		<br>
 		<br>
 		Additional Computer interface devices, such as Slide Advancers are available on our <a href="https://stonybrook.webcheckout.net/sso/patron#!/center/1?catalogRtype=493835">Patron Portal</a>.
-</a>
+
       </p>
 	  </article>
 </script>	
@@ -599,7 +618,21 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
 		<br>
 		<br>
 		Please contact Classroom Support for additional details or a seating chart for this room.
-</a>
+
+      </p>
+	  </article>
+</script>	
+
+<script type="text/template" id="tooltip-usb">
+        <article>
+		<img src='USB.jpg'> 
+      <h2>Additional USB ports</h2>
+      <p>
+        There are three additional USB ports on the side of the lectern monitor.
+		<br>
+		<br>
+		These USB ports are limited to USB 2 only. For a USB 3 compatable port, please see the computer located below the Mouse & Keyboard.
+
       </p>
 	  </article>
 </script>	
