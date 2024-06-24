@@ -214,7 +214,140 @@ html, body, #viewer {
       "trigger": "click"
     }
 },
-            ],
+  {
+    "id": "seats",
+    "image": 'shield.png',
+    "position": {
+      "yaw": 5.035,
+      "pitch": -0.15
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-seats').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},  
+  {
+    "id": "chair",
+    "image": 'shield.png',
+    "position": {
+      "yaw": 1.487,
+      "pitch": -0.378
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-chair').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},  
+{
+    "id": "exterior",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 4.453,
+      "pitch": 0.002
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-exterior').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "exterior2",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 1.766,
+      "pitch": -0.041
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-exterior').innerText,
+	  "className": 'custom-tooltip',
+      "position": "top center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "garbage",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 4.617,
+      "pitch": -0.137
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-garbage').innerText,
+	  "className": 'custom-tooltip',
+      "position": "left center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "window",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 0.615,
+      "pitch": -0.053
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-window').innerText,
+	  "className": 'custom-tooltip',
+      "position": "right center",
+      "trigger": "click"
+    }
+},
+{
+    "id": "hvac",
+    "image": 'shield.png',
+    "position": {
+	  "yaw": 4.111,
+      "pitch": 0.556
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-hvac').innerText,
+	  "className": 'custom-tooltip',
+      "position": "right center",
+      "trigger": "click"
+    }
+},
+          ],
         }],
     ],
         container: document.querySelector('#viewer'),
@@ -348,3 +481,88 @@ The Two Button Lighting Controll (not pictured) allows for Full on and Full off 
       </p>
 	  </article>
 </script>	
+
+<script type="text/template" id="tooltip-seats">
+        <article>
+		<img src='Seating.jpg'> 
+      <h2>Accessable Seating</h2>
+      <p>
+        There are four wheelchair accessable seating postions, each with a rolling chair for added flexability.
+		<br>
+		<br>
+		Each outer edge of the first two rows has this seating arrangment in for a total of four accessable seats.
+		<br>
+		<br>
+		Please contact Classroom Support for additional details or a seating chart for this room.
+
+      </p>
+	  </article>
+</script>	
+
+<script type="text/template" id="tooltip-chair">
+        <article>
+		<h2>Professors Desk & Chair</h2>
+      <p>
+        The Professors Desk & Chair are permanant movable furnature assigned to this classroom.
+		<br>
+		<br>
+		Please return the Desk & Chair to the side of the Lectern if they are moved out of place.
+
+      </p>
+	  </article>
+</script>	
+
+<script type="text/template" id="tooltip-exterior">
+        <article>
+		<img src='Exterior.jpg'> 
+      <h2>Exterior Scheduling Panel</h2>
+      <p>
+        Outisde the classroom is the scheduling panel.
+		<br>
+		<br>
+		The panels border will illumiate blue when the room is in use, and white when it is not currently scheduled.
+		<br>
+		<br>
+		The panel will also note the current and upcomming classes on its screen.
+
+      </p>
+	  </article>
+</script>	
+
+<script type="text/template" id="tooltip-garbage">
+        <article>
+		<img src='Trash.jpg'> 
+      <h2>Garbage, Recycling & other Custodial issues</h2>
+      <p>
+        Located on both sides of the room, near the doors, are Garbage, Paper Recycling and Container Recycling.
+		<br>
+		<br>
+		Additional Custodial issues can be reported to (631) 632-6400 (spills) or a <a href="https://www.stonybrook.edu/fixit/">FIXIT</a> (damage) can be made.
+	      </p>
+	  </article>
+</script>
+
+<script type="text/template" id="tooltip-window">
+        <article>
+		<img src='Window.jpg'> 
+      <h2>Window Shades</h2>
+      <p>
+        Located on the right side of the each window is a pull chain to open or close the shades in the room.
+		<br>
+		<br>
+		A <a href="https://help.stonybrook.edu/TDClient/277/Portal/Home/">Service Ticket</a> can be made for any damage that needs to be reported.
+	      </p>
+	  </article>
+</script>
+
+<script type="text/template" id="tooltip-hvac">
+        <article>
+      <h2>HVAC and Tempature Control</h2>
+      <p>
+        Noisy HVAC or tempature change requests can be made by calling COMS or by Creating a FIXIT Ticket.
+		<br>
+		<br>
+		Issues can be reported to (631) 632-6400 or a <a href="https://www.stonybrook.edu/fixit/">FIXIT Ticket</a> can be made.
+	      </p>
+	  </article>
+</script>
