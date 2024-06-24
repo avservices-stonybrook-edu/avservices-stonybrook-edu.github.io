@@ -87,9 +87,10 @@ html, body, #viewer {
         }],
         [MarkersPlugin, {
 		"defaultHoverScale": true,
-            markers: [
+                 }],   
                
-
+				const virtualTour = viewer.getPlugin(VirtualTourPlugin);
+				
 const markerlectern = {
     id: 'marker-lectern',
     image: 'shield.png',
@@ -109,9 +110,9 @@ const markerlectern = {
 	
 	
           ],
-        }],
-		const virtualTour = viewer.getPlugin(VirtualTourPlugin);
-		
+
+
+
 		virtualTour.setNodes([
     {
         id: '1',
