@@ -1,4 +1,27 @@
-import './styles.css';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PSV Virtual Tour Demo</title>
+</head>
+
+<body>
+    <div id="viewer"></div>
+
+@import '../node_modules/@photo-sphere-viewer/core/index.css';
+@import '../node_modules/@photo-sphere-viewer/virtual-tour-plugin/index.css';
+@import '../node_modules/@photo-sphere-viewer/gallery-plugin/index.css';
+@import '../node_modules/@photo-sphere-viewer/markers-plugin/index.css';
+
+html, body, #viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 import { Viewer } from '@photo-sphere-viewer/core';
 import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
 import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
@@ -112,3 +135,6 @@ virtualTour.setNodes([
         panoData: { poseHeading: 250, posePitch: 3 },
     },
 ], '2');
+
+</body>
+</html>
