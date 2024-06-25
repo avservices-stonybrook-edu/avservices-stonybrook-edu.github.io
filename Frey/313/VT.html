@@ -142,18 +142,6 @@ const markerlectern = {
         container: document.querySelector('#viewer'),
 		
    
-	const markersPlugin = viewer.getPlugin(MarkersPlugin);
-	viewer.addEventListener('ready', () => {
-    viewer
-        .animate({
-            yaw: 1.45,
-            pitch: 0.15,
-            speed: 2500,
-        })
-        .then(() => {
-            markersPlugin.showMarkerTooltip('marker-lectern');
-        });
-}, { once: true });
 
 	</script>
 
