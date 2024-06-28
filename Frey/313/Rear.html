@@ -83,7 +83,7 @@ html, body, #viewer {
             markers: [
                 {
     "id": "marker-lectern",
-    "image": 'shield.png',
+    "image": 'eye.png',
     "position": {
       "yaw": 5.485,
       "pitch": -0.078
@@ -329,6 +329,25 @@ html, body, #viewer {
       "trigger": "click"
     }
 },
+{
+    "id": "front",
+    "image": 'eye.png',
+    "position": {
+	  "yaw": 3.068,
+      "pitch": -0.098
+    },
+    "size": {
+      "width": 32,
+      "height": 32
+    },
+    "anchor": "bottom center",
+    "tooltip": {
+      "content": document.querySelector('#tooltip-front').innerText,
+	  "className": 'custom-tooltip',
+      "position": "left bottom",
+      "trigger": "click"
+    }
+},
             ],
         }],
     ],
@@ -368,15 +387,21 @@ html, body, #viewer {
 
 <script type="text/template" id="tooltip-content">
         <article>
+		<a href="https://avservices-stonybrook-edu.github.io/Frey/313/Lectern.html">
 		<img src='freylectern.jpg'> 
+		</a>
       <h2>Frey Far Beyond Style Lectern</h2>
       <p>The Lectern houses the control panel, and computer for the room. 
 	  <br>
 	  <br>
         For more information on how to operate Frey Far Beyond Style Lecterns, please see our Far Beyond Style Knowlage Base Article: <a href="https://it.stonybrook.edu/help/kb/far-beyond-style">https://it.stonybrook.edu/help/kb/far-beyond-style</a>
-      </p>
+      <br>
+	  <br>
+	  To view the lectern up close, and examine its features, click the image above or the following link:<br>
+	  <a href="https://avservices-stonybrook-edu.github.io/Frey/313/Lectern.html">https://avservices-stonybrook-edu.github.io/Frey/313/Lectern.html</a>
+	  </p>
     </article>
-</script>	
+</script>		
 
 
 <script type="text/template" id="tooltip-supplies">
@@ -533,6 +558,17 @@ html, body, #viewer {
 		<br>
 		<br>
 		A <a href="https://help.stonybrook.edu/TDClient/277/Portal/Home/">Service Ticket</a> can be made for any damage/outages that need to be reported.
+	      </p>
+	  </article>
+</script>
+
+<script type="text/template" id="tooltip-rear">
+        <article>
+      <h2>Alternate Room View</h2>
+      <p>
+        Click the folloing link to view the room from a Professors perspective:
+		<br>
+		<a href="https://avservices-stonybrook-edu.github.io/Frey/313/Front.html">https://avservices-stonybrook-edu.github.io/Frey/313/Front.html</a>
 	      </p>
 	  </article>
 </script>
